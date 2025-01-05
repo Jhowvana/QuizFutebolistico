@@ -1,0 +1,173 @@
+/*Este site é da fonte do texto*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*praticamente "obrigatorio" pq dps fica mais facil de organizar*/
+*{ 
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+ }
+
+ /*fundo do site, cor da letra, fonte da letra, e porcentagem de negrito*/
+body{
+         background-color: hsla(50, 65%, 81%, 0.5);
+         color:rgb(46, 44, 44);
+         font-family: "Merriweather", serif;
+         font-weight: 300;
+    } 
+
+/*cabecalho do site, cor do fundo do titulo, alinhamento, e cor do titulo e subtitulo*/
+/*"2rem" praticamente obrigatorio pois facilita quem vai ver pelo telefone*/
+header{ 
+         padding: 2rem;
+         background-color: hsl(82, 33%, 56%);
+         text-align: center;
+         color: white
+      }
+main > section:first :nth-of-type(h1) {
+    color: tomato;
+}
+
+/*"padding" - deixa mais espaçoso entre as linhas,*/
+/*"display:flex" - Transforma o <main> em um contêiner flexível.
+ Isso facilita o alinhamento e distribuição dos itens filhos.*/
+ /*"flex- direction: column" - quase obrigatorio pois depois que coloca o algoritmo "display:flex"
+  todos os codigos de alinham horizontalmente e esse faz com que volte a ser vertical"
+ /*"gap:2rem" - define o espaçamento entre os itens filhos*/
+main{
+         padding: 2rem;
+         display: flex;
+         flex-direction: column;
+         gap:2rem
+     }
+
+ /*"gap:2rem" - define o espaçamento entre os itens filhos*/
+section{
+         display:flex;
+         flex-direction: column;
+         gap:1rem;                 
+       }
+
+/*mudança na cor dos subtitulos, tamanho menor do subtitulo*/
+h2{
+         color:rgb(8, 36, 3);
+         font-size: 1.2rem;
+  }
+
+/*mudança na cor das bolinhas de multiplas escolha*/
+  input[type="radio"], input[type="checkbox"] {
+        accent-color: hsl(68, 43%, 71%); 
+  }
+/*width - largura*/
+/*"outiline"- serve para tirar a bordar de acessibilidade*/
+input[type="text"], input[type="date"], input [type="email"] {
+         width: 100%;
+         max-width: 800px;  /* Opcional: Limita a largura máxima*/ /*so coloquei esse pq a faixa não crescia*/
+         padding:0.4rem; 
+         border-radius: 5rem;
+         outline: none;  
+         background-color: transparent;       
+ }
+
+/*altera a cor do "digite aqui", vulgo placeholder"*/
+ input::placeholder {
+    color: hsl(89, 15%, 48%);
+  }
+
+  /*"cursor: pointer" - aparece aquele dedinho clicando*/
+  /*"border-radius" - deixa a borda arredondada*/
+  /*"border: none" - tira a borda preta*/
+select {
+         cursor: pointer;
+         background-color:  hsl(82, 33%, 56%);
+         color: black;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+       }
+
+ /*"border-radius" - deixa a borda da ft arredondada"*/   
+img {
+         width:8rem;
+         border-radius: 5px;
+    }
+
+/*"border-collapse" - deixa a borda normal, sem ter aquelas duas linhas"*/
+table{
+         width: 100%;
+         border-collapse: collapse;
+         border-radius: 5px;
+     }
+
+/*cabeçalho da tabela de pontuação*/
+th{
+         background-color: hsl(82, 33%, 56%);
+         color: white;
+         padding: 0.2rem;
+  }
+
+ /* corpo da tabela de pontuação*/
+ td{
+         padding: 0.3rem;
+   }
+
+/*rodapé, usado "tfoodd td" pq td esta dentro de tfood*/
+tfoot td{
+         background-color: hsl(82, 33%, 56%);
+         color: white;
+         text-align: center;
+   }
+   
+details {
+    cursor: pointer;
+    background-color: hsl(82, 33%, 56%);
+    border-radius: 2px;
+    padding: 1rem;
+    }
+
+summary {
+   margin: 0.5rem;
+   cursor: pointer;
+}
+
+/*serve para deixar uma margem em um lado so, nesse caso somente na esquerda*/
+margin-left {
+    margin-left: 1.5rem;
+}
+
+ul li{
+    padding: 0,5rem;
+}
+
+fieldset{
+    border: 2px solid color hsl(89, 15%, 48%);
+    border-radius: 2px;
+    background-color:hsl(82, 33%, 56%);
+    padding:1.5rem;   
+}
+ 
+textarea{
+    background-color: white;
+    border-radius: 2px;
+    outline: none;
+    border-color:none;
+    cursor: pointer;
+}
+
+button{
+    background-color:white;
+    color:hsl(89, 15%, 48%);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+footer p {
+     background-color: hsl(82, 56%, 12%);
+     color :white;
+     text-align: center;
+     padding: 0.5rem;
+    
+}
+
+
